@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f0ca063-9c37-44a9-a2fd-cec41bedf678" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Extension.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Herencia.puml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,13 +73,21 @@
       <option name="project" value="LOCAL" />
       <updated>1684102798380</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Diagrama Extensión">
+      <created>1684103704551</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684103704551</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Creacion" />
     <MESSAGE value="Diagramas de Seccion Objetivos" />
     <MESSAGE value="Diagrama Inclusión" />
-    <option name="LAST_COMMIT_MESSAGE" value="Diagrama Inclusión" />
+    <MESSAGE value="Diagrama Extensión" />
+    <option name="LAST_COMMIT_MESSAGE" value="Diagrama Extensión" />
   </component>
 </project>

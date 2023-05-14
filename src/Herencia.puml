@@ -1,0 +1,14 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+left to right direction
+
+:Agente: as agente
+(Enviar\nsolicitud\crédito) as envSolCred
+(Enviar\nsolicitud\ncrédito\npersonal) as envSolCredPer
+(Enviar\nsolicitud\ncrédito\nempresarial) as envSolCredEmpre
+
+agente --> envSolCred
+envSolCredPer --|> envSolCred
+envSolCredEmpre -left--|> envSolCred
+
+@enduml
