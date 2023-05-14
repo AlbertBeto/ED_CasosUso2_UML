@@ -1,0 +1,12 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+left to right direction
+:Agente: as agente #white;line:red;
+
+(Evaluar\nSolicitud de\nCrédito) as evaluaCred #line:red;
+
+(Solicitar\nInformación\nadicional al\ncliente) as solInfoExtra #line:red;
+
+agente --> evaluaCred #red
+evaluaCred <... solInfoExtra #red : <<extend>>\n Si ingresos < 1000
+@enduml
