@@ -1,0 +1,21 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+left to right direction
+:Socio: as soci
+:Bibliotecario: as actor2
+
+rectangle Biblioteca{
+(Reservar\nLibro) as cas1
+(Prestar\nLibro) as cas2
+(Devolver\nLibro) as cas3
+(Actualizar\nCatálogo) as cas4
+}
+
+soci --- cas1
+soci --- cas2
+soci --- cas3
+
+cas2 -- actor2
+cas4 -- actor2
+
+@enduml

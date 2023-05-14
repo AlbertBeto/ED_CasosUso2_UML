@@ -1,0 +1,26 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+left to right direction
+:Actor: as actor1
+:Actor: as actor2
+
+rectangle Sistema{
+(Caso de uso) as cas1
+(Caso de uso) as cas2
+(Caso de uso) as cas3
+}
+
+actor1 -down-- cas1
+actor1 -down-- cas2
+actor1 -down-- cas3
+
+actor2 -up-- cas1
+actor2 -up-- cas3
+
+rectangle "Entorno del sistema" as entorno #technology;line:red;line.bold;
+rectangle "Comunicación" as com #technology;line:red;line.bold;
+
+com ---> cas3 #red
+entorno -up--> Sistema #red
+
+@enduml
