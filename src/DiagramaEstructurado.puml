@@ -1,0 +1,34 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+left to right direction
+:Empleado: as emp #white
+(Alta Cliente)
+(Introducir\nPedido)
+(Obtener\nEstado\nPedido)
+(Buscar\nPedido)
+(Cancelar\nPedido)
+
+emp -left--(Alta Cliente)
+emp --(Introducir\nPedido)
+emp --(Obtener\nEstado\nPedido)
+emp --(Buscar\nPedido)
+emp --(Cancelar\nPedido)
+
+(Alta Cliente) ..>(Introducir\nPedido) : extiende
+(Obtener\nEstado\nPedido) ..> (Buscar\nPedido) : incluye
+(Cancelar\nPedido) ..> (Buscar\nPedido) : incluye
+
+(Buscar\nCliente)
+(Pago en\nCuenta)
+(Buscar\nPedido)
+(Pago con\nTarjeta)
+
+(Introducir\nPedido) ..> (Buscar\nCliente) : incluye
+(Introducir\nPedido) <.. (Pago con\nTarjeta) : extiende
+(Introducir\nPedido) <..(Pago en\nCuenta)  : extiende
+
+rectangle "(... el modelo no está completo)" as text #white;line:white
+
+text -down- (Cancelar\nPedido) #white
+
+@enduml
