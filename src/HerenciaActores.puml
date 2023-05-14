@@ -1,0 +1,19 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+top to bottom direction
+:Cliente\nBancario: as cliBanc
+
+:Cliente\nCorporativo: as cliBancCorpo
+:Cliente\nNormal: as cliBancNormi
+
+rectangle "Actor antecesor" as actAnt #palegreen;text:red;line:palegreen
+rectangle "Actor descendiente" as actDesc  #palegreen;text:red;line:palegreen
+
+cliBanc <|-down- cliBancCorpo
+cliBanc <|-down- cliBancNormi
+
+cliBanc <--right- actAnt #darkred
+cliBancCorpo <--right- actDesc #white
+cliBancNormi <--right- actDesc #darkred
+
+@enduml
