@@ -1,0 +1,35 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+left to right direction
+:Empleado: as emple
+:Administrador: as admin
+
+rectangle "Empresa Pedidos"{
+rectangle " " as izq #line:white{
+(Introducir\nPedido)
+(Cancelar\nPedido)
+(Obtener\nEstado\nPedido)
+(Borrar\nPedido)
+(Buscar\nPedidos)
+(Alta\nCliente)
+(Buscar\nCliente)
+}
+rectangle " " as de #line:white{
+(Nuevo\nProducto)
+(Borrar\nProducto)
+}
+}
+izq -- de
+
+emple --- (Introducir\nPedido)
+emple -- (Cancelar\nPedido)
+emple -- (Obtener\nEstado\nPedido)
+emple --(Borrar\nPedido)
+emple --(Buscar\nPedidos)
+emple --(Alta\nCliente)
+emple --(Buscar\nCliente)
+
+(Nuevo\nProducto) -- admin
+(Borrar\nProducto) -- admin
+
+@enduml
